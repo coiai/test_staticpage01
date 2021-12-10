@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS読み込み -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/top.css">
+    <!-- JS読み込み -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./js/postcode.js"></script>
     <title>猫との日常</title>
 </head>
 <body class="text_color">
@@ -110,6 +114,15 @@
                     
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="sec4">
+        <div class="container">
+            <input type="number" id="zipcode" value="" maxlength="7">
+            <input type="button" id="search_btn" value="検索">
+            <p>※7桁の半角数字で入力してください</p>
+            <!-- 検索結果の表示エリア -->
+            <div id="zip_result"></div>
         </div>
     </section>
     </main>
